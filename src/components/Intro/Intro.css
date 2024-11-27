@@ -1,0 +1,157 @@
+.intro{
+
+    height: 77vh;
+    display: flex;
+    margin-top: 6rem;
+}
+.i-left{
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.i-name{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+
+.i-name>:nth-child(2){
+
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+.i-name>:nth-child(3){
+
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+.i-button{
+    width: 6rem;
+    height: 2rem;
+
+}
+.i-icons {
+    color: var(--orange);
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+}
+.i-icons>*{
+    transform: scale(1.5);
+}
+
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+.i-right{
+    flex: 1;
+    position: relative;
+
+}
+
+.i-right>*{
+    position: absolute;
+    z-index: 1; 
+
+}
+
+.i-right>:nth-child(1){
+    transform: scale(0.73);
+    left: -9%;
+    top: -7%;
+} 
+.i-right>:nth-child(2){
+    top: -4.7rem;
+    transform: scale(0.67);
+    left: -3rem;
+
+}
+
+.i-right>:nth-child(3){
+    transform: scale(2.4);
+    left: 24%;
+    top: 8.9%;
+
+}
+
+.i-right>:nth-child(4){
+    transform: scale(0.7);
+    left: -20%;
+    top: -19%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+    
+    .blur{
+
+        position: absolute;
+        width: 22rem;
+        height: 14rem;
+        border-radius: 50%;
+        background: #edd0ff;
+        filter: blur(80px);
+        z-index: -9;
+        top: -13%;
+        left: 56%;
+    }
+
+    @media screen and (max-width: 480px){
+       .intro{
+        flex-direction: column;
+        gap: 5rem;
+        margin: auto;
+        height: 82vh;
+       }
+       .i-icons{
+           gap: 0rem ;
+       }
+       .i-icons>* {
+        margin: auto;
+        transform: scale(2);
+
+    }
+       .i-right{
+        transform: scale(0.679);
+        left:-2.9rem
+       }
+       .i-right .blur{
+        display: none;
+       }
+       .floating-div:nth-of-type(1){
+        top: -1.2rem !important;
+        left: 95% !important;
+        box-shadow: var(--boxShadow);
+
+        
+       }
+       .floating-div:nth-of-type(2){
+        top: 18rem !important;
+        box-shadow: var(--boxShadow);
+        left: -9% !important;
+        
+       }
+       .i-right>:nth-child(3){
+        transform: scale(2.2);
+        left: 50%;
+        top: 59%;
+    } 
+        
+        }
