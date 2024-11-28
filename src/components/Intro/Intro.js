@@ -52,7 +52,7 @@ const Intro = () => {
       <div className="i-right">
       <img src={Vector1}/>
       <img src={Vector2}/>
-          <img src={Girl} width='400vw' />
+          <img src={Girl} width='400rem' />
           <motion.img 
           initial={{ left:'-36%' }}
           whileInView={{ left:'-24%' }}
@@ -61,19 +61,19 @@ const Intro = () => {
           className='floating-div'/>
           
           <motion.div 
-           initial={{  top:'-4%' ,left:'66%' }}
-           whileInView={{ left:'55%' }}
+           initial={{  top:'-2rem' ,left:'22rem' }}
+           whileInView={{ left:'19rem' }}
            transition={transition}
-           style={{ top:"-4%",left:"55%" }}
+           style={{ top:"-2rem",left:"19rem" }}
            className='floating-div'>
             <FloatingDiv image={Crown} txt1="Web" txt2="Developer"/>
           </motion.div>
 
           <motion.div 
-           initial={{ top:'56%' ,left:'-19%' }}
-           whileInView={{ left:'-6%' }}
+           initial={{ top:'18rem ' ,left:'-5rem' }}
+           whileInView={{ left:'-2rem' }}
            transition={transition}
-           style={{ top:"56%",left:"-6%"}}
+           style={{ top:"18rem",left:"-2rem"}}
            className='floating-div'>
             <FloatingDiv image={Thumbup} txt1="Best Design" txt2="Award"/>
           </motion.div>

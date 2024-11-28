@@ -31,9 +31,9 @@
     gap: 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .footer {
-        height: 40vh;
+        height: 50vh;
     }
 
     .f-content {
