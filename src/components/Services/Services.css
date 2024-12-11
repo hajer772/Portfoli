@@ -1,4 +1,4 @@
-.services{
+.services {
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 40vh;
@@ -7,15 +7,15 @@
 
 }
 
-.awesome{
-   
+.awesome {
+
     display: flex;
     position: relative;
     flex-direction: column;
- 
+
 }
 
-.awesome>:nth-child(1){
+.awesome>:nth-child(1) {
 
     color: var(--black);
     font-weight: bold;
@@ -23,14 +23,15 @@
 
 }
 
-.awesome>:nth-child(2){
+.awesome>:nth-child(2) {
 
     color: var(--orange);
     font-weight: bold;
     font-size: 2.5rem;
 
 }
-.awesome>:nth-child(3){
+
+.awesome>:nth-child(3) {
 
     color: var(--gray);
     font-weight: 100;
@@ -38,48 +39,53 @@
     margin-top: 1rem;
 
 }
-.s-button{
+
+.s-button {
     width: 8rem;
     height: 2rem;
     margin-top: 1rem;
 
 }
 
-.cards{
+.cards {
     position: relative;
 }
-.cards>*{
+
+.cards>* {
     position: absolute;
 }
 
-.s-blur2{
+.s-blur2 {
     left: 22rem;
-    top:2rem;
+    top: 2rem;
 }
 
-.s-blur1{
+.s-blur1 {
     top: 9rem;
     left: -14rem;
 }
 
 
-@media screen and (max-width: 600px){
-    .services{
-     flex-direction: column;
-     gap:2rem;
-     height: 100vh;
+@media screen and (max-width: 425px) {
+    .services {
+        flex-direction: column !important;
+        gap: 2rem !important;
+        height: 100vh !important;
 
     }
-   
-    .cards>*{
-        position: static;
+
+    .cards>* {
+        position: static !important;
     }
-    .cards{
+
+    .cards {
         display: flex !important;
         flex-direction: column !important;
-        gap: 17rem;
+        gap: 17rem !important;
+        left: 0rem !important;
+
     }
-    
+
 
     /* .cards>:nth-child(1){
         left: 0rem !important;
@@ -93,5 +99,29 @@
         left: 0rem !important;
         top: 34rem !important;
     } */
-     
-     }
+
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        gap: 2rem;
+        height: 25vh
+    }
+
+    .cards>* {
+        position: static;
+        transform: scale(0.9);
+    }
+
+    .cards {
+        display: flex !important;
+        flex-direction: row;
+        gap: 13rem;
+        left: -6rem;
+    }
+
+    .awesome {
+        margin: 0 auto;
+    }
+}

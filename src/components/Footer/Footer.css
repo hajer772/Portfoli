@@ -31,7 +31,8 @@
     gap: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 425px) {
     .footer {
         height: 50vh;
     }
@@ -44,7 +45,7 @@
     }
 
     .f-content span {
-        font-size: small;
+        font-size: small !important;;
 
     }
 
@@ -57,4 +58,33 @@
         font-size: xx-large !important;
 
     }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 50vh ;
+    }
+
+    .f-content {
+
+        margin-top: 1rem ;
+        gap: 1.5rem;
+
+    }
+
+    .f-content span {
+        font-size: large  ;
+
+    }
+
+    .f-icons {
+        gap: 1rem ;
+    }
+    .f-icons>* {
+
+        font-size: xx-large ;
+
+    }
+
+    
 }
