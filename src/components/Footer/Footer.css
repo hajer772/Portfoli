@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 425px) {
     .footer {
-        height: 50vh;
+        height: 65vh;
     }
 
     .f-content {
@@ -45,7 +45,8 @@
     }
 
     .f-content span {
-        font-size: small !important;;
+        font-size: small !important;
+        ;
 
     }
 
@@ -62,29 +63,30 @@
 
 @media screen and (max-width: 768px) {
     .footer {
-        height: 50vh ;
+        height: 65vh;
     }
 
     .f-content {
 
-        margin-top: 1rem ;
+        margin-top: 1rem;
         gap: 1.5rem;
 
     }
 
     .f-content span {
-        font-size: large  ;
+        font-size: large;
 
     }
 
     .f-icons {
-        gap: 1rem ;
+        gap: 1rem;
     }
+
     .f-icons>* {
 
-        font-size: xx-large ;
+        font-size: xx-large;
 
     }
 
-    
+
 }
